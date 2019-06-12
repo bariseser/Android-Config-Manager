@@ -72,4 +72,4 @@ ConfigManager.getInstance().clear();
 ```
 
 ### Bugs
-If you encounter any problems please feel the free to open an [Issue](https://github.com/bariseser/AndroidConfigManager/issues/new.). 
+If you encounter any problems please feel the free to open an [Issue](https://github.com/bariseser/AndroidConfigManager/issues/new.)
