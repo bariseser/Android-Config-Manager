@@ -1,7 +1,7 @@
 # AndroidConfigManager
 user-friendly configuration wrapper for Android
 
-[![version](https://img.shields.io/badge/version-1.0.2-green.svg)](https://semver.org)
+[![version](https://img.shields.io/badge/version-1.0.2-green.svg)](https://semver.org) [![](https://jitpack.io/v/bariseser/AndroidConfigManager.svg)](https://jitpack.io/#bariseser/AndroidConfigManager)
 
 # Download
 AndroidConfigManager is available in jitPack.
@@ -27,8 +27,6 @@ dependencies
     implementation 'com.github.bariseser:AndroidConfigManager:Tag'
 }
 ```
-
-Current Version: [![version](https://img.shields.io/badge/version-1.0.2-green.svg)](https://semver.org)
 
 # Usage
 
