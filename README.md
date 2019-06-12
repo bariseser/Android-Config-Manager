@@ -71,5 +71,5 @@ ConfigManager.getInstance().delete('comment_count');
 ConfigManager.getInstance().clear();
 ```
 
-### Bugs?
-If you encounter any problems please feel the free to open an #26
+### Bugs
+If you encounter any problems please feel the free to open an [Issue](https://github.com/bariseser/AndroidConfigManager/issues/new.). 
