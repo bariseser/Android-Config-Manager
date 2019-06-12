@@ -9,6 +9,7 @@ import com.bariseser.config_manager.ConfigManager;
 
 public class MainActivity extends AppCompatActivity {
     public static String TAG = "MainActivityLOG";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,11 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         ConfigManager.getInstance().initialize(this, "settings");
 
-        ConfigManager.getInstance().setString("username", "Barış Eser");
-
-        Log.d(TAG, ConfigManager.getInstance().getString("username", null));
-
-        Log.d(TAG, ConfigManager.getInstance().getAll().get("username").toString());
-
+        ConfigManager.getInstance().setString("key", "value");
+        ConfigManager.getInstance().setInt("comment_count", 100);
+        ConfigManager.getInstance().setBoolean("is_login", true);
+        ConfigManager.getInstance().setLong("long", 12345678910L);
+        ConfigManager.getInstance().setFloat("float", 9.52f);
     }
 }

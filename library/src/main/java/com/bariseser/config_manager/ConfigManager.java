@@ -22,7 +22,6 @@ public class ConfigManager {
 
         preferences = context.getSharedPreferences(key, Context.MODE_PRIVATE);
         editor = context.getSharedPreferences(key, Context.MODE_PRIVATE).edit();
-        editor.apply();
     }
 
     public void setString(String key, String value) {
@@ -41,6 +40,10 @@ public class ConfigManager {
         editor.putLong(key, value).apply();
     }
 
+    public void setFloat(String key, float value) {
+        editor.putFloat(key, value).apply();
+    }
+
     public String getString(String key, String defaultValue) {
         return preferences.getString(key, defaultValue);
     }
@@ -57,8 +60,19 @@ public class ConfigManager {
         return preferences.getLong(key, defaultValue);
     }
 
+    public float getFloat(String key, float defaultValue) {
+        return preferences.getFloat(key, defaultValue);
+    }
+
     public Map<String, ?> getAll() {
         return preferences.getAll();
     }
 
+    public void delete(String key){
+        editor.remove(key);
+    }
+
+    public void clear(){
+        editor.clear().commit();
+    }
 }
